@@ -1,0 +1,32 @@
+28
+set xiao 0520
+set xiao 0521
+set xiao 0522
+set xiao 0523
+set yuhao 1990
+set yuhao 1991
+get xiao
+get yuhao
+set yuhao 1992
+set yuhao 1993
+set yuhao 1994
+set yuhao 1995
+set yuhao 1996
+set hebe 1981
+set hebe 1982
+get yuhao
+set selina 1985
+set selina 1986
+set ella 1990
+set ella 1991
+set ella 1992
+get xiao
+get hebe
+set xiao 0000
+set yuhao 0001
+set ella 0002
+set hebe 0003
+set selina 0004
+get xiao
+get hebe
+get selina
