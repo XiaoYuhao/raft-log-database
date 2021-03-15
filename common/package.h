@@ -1,3 +1,6 @@
+#ifndef _PACKAGE_H
+#define _PACKAGE_H
+
 #include <cstdlib>
 #include <cstring>
 #include <arpa/inet.h>
@@ -27,6 +30,7 @@ struct db_get_package{
         key_len = strlen(key) + 1;
         strcpy(buf, key);
         header.package_length = htons(sizeof(package_header)+4+key_len);
+        key_len = htonl(key_len);
     }
 };
 
@@ -40,6 +44,7 @@ struct db_get_res_package{
         val_len = strlen(val) + 1;
         strcpy(buf, val);
         header.package_length = htons(sizeof(header)+8+val_len);
+        val_len = htonl(val_len);
     }
 };
 
@@ -56,6 +61,8 @@ struct db_set_package{
         strcpy(buf, key);
         strcpy(buf+key_len, val);
         header.package_length = htons(sizeof(package_header)+8+key_len+val_len);
+        key_len = htonl(key_len);
+        val_len = htonl(val_len);
     }
 };
 
@@ -69,3 +76,5 @@ struct db_set_res_package{
         status = st;
     }
 };
+
+#endif

@@ -6,6 +6,8 @@
 #include<string>
 using namespace std;
 
+const int NUM = 100000;
+
 void create_data_in(){
     vector<string> kvec;
     char key[11];
@@ -13,8 +15,9 @@ void create_data_in(){
     key[10] = '\0';
     val[10] = '\0';
     ofstream out;
-    out.open("testdata/in3", ios::out);
-    for(int i=0;i<10000;i++){
+    out.open("in4", ios::out);
+    out<<NUM<<endl;
+    for(int i=0;i<NUM;i++){
         int op = rand()%10;
         if(op==0){
             if(kvec.size()==0){
@@ -50,9 +53,9 @@ void create_data_in(){
 void create_data_out(){
     unordered_map<string, string> htable;
     ifstream in;
-    in.open("testdata/in3", ios::in);
+    in.open("in4", ios::in);
     ofstream out;
-    out.open("testdata/out3", ios::out);
+    out.open("out4", ios::out);
     string op, key, val;
     while(!in.eof()){
         in>>op;

@@ -1,32 +1,38 @@
-28
+37
 set xiao 0520
-set xiao 0521
-set xiao 0522
-set xiao 0523
-set yuhao 1990
-set yuhao 1991
-get xiao
-get yuhao
-set yuhao 1992
-set yuhao 1993
-set yuhao 1994
-set yuhao 1995
 set yuhao 1996
-set hebe 1981
-set hebe 1982
+set aaa 0001
+set aab 0002
+set aac 0003
+set aba 0004
+set abb 0005
+set abc 0006
+set aca 0007
+set acb 0008
+set acc 0009
+set baa 0010
+set bab 0011
+set bac 0012
+set bba 0013
+set bbb 0014
+set bbc 0015
+set bca 0016
+set bcb 0017
+set bcc 0018
+set caa 0019
+set cab 0020
+set cac 0021
+set cba 0022
+set cbb 0023
+set cbc 0024
+set cca 0025
+get xiao
+get acc
+get bac
 get yuhao
-set selina 1985
-set selina 1986
-set ella 1990
-set ella 1991
-set ella 1992
-get xiao
-get hebe
-set xiao 0000
-set yuhao 0001
-set ella 0002
-set hebe 0003
-set selina 0004
-get xiao
-get hebe
-get selina
+get aaa
+get bba
+get bcb
+get caa
+get cbb
+get cca
