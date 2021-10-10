@@ -97,7 +97,8 @@ void SSTable::compress_merge(){
     iter = sstable.begin();
     infile.peek();
     if(!infile.eof()) infile>>key>>val;
-    while(1){
+    while(!infile.eof()&&iter!=sstable.end()){
+        p = outfile.tellp();
         /*if(key=="zzyfypkjre"){
             std::cout<<"old"<<std::endl;
         }
@@ -126,8 +127,8 @@ void SSTable::compress_merge(){
         }
         count++;
 
-        if(infile.eof()) break;
-        if(iter==sstable.end()) break;
+        //if(infile.eof()) break;
+        //if(iter==sstable.end()) break;
     }
     
     while(!infile.eof()){
